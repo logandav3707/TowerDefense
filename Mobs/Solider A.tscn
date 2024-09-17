@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://by786jo43xjdf"]
+
+[ext_resource type="Texture2D" uid="uid://8s3jr22wpn47" path="res://assets/Tower Defense (top-down)/ememies/towerDefense_tile245.png" id="1_v2bnk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mr57n"]
+
+[node name="Solider A" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_mr57n")
+
+[node name="TowerDefenseTile245" type="Sprite2D" parent="."]
+texture = ExtResource("1_v2bnk")
