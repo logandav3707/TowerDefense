@@ -4,12 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://8s3jr22wpn47" path="res://assets/Tower Defense (top-down)/ememies/towerDefense_tile245.png" id="1_v2bnk"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mr57n"]
+radius = 25.0
 
 [node name="Solider A" type="CharacterBody2D"]
 script = ExtResource("1_173dd")
 
+[node name="TowerDefenseTile245" type="Sprite2D" parent="."]
+scale = Vector2(2.13281, 1.70312)
+texture = ExtResource("1_v2bnk")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_mr57n")
-
-[node name="TowerDefenseTile245" type="Sprite2D" parent="."]
-texture = ExtResource("1_v2bnk")

@@ -1,22 +1,5 @@
-[gd_scene load_steps=3 format=3 uid="uid://m42bu0bcsk4j"]
-
-[ext_resource type="PackedScene" uid="uid://by786jo43xjdf" path="res://Mobs/Solider A.tscn" id="1_ncrvx"]
-
-[sub_resource type="Curve2D" id="Curve2D_2e401"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, -1354, -647, 0, 0, 0, 0, -1327, -296, 0, 0, 0, 0, -1007, -276, 0, 0, 0, 0, -521.88, -283.302, 0, 0, 0, 0, -390, -289, 0, 0, 0, 0, -353, -552, 0, 0, 0, 0, -106, -518, 0, 0, 0, 0, -118, 138, 0, 0, 0, 0, 1212, 144, 0, 0, 0, 0, 1488, 39, 0, 0, 0, 0, 1470, 297, 0, 0, 0, 0, 1488, 519, 0, 0, 0, 0, 1389, 672, 0, 0, 0, 0, 970, 696, 0, 0, 0, 0, 910, 765, 0, 0, 0, 0, 913, 842, 0, 0, 0, 0, 928, 938)
-}
-point_count = 17
+[gd_scene format=3 uid="uid://m42bu0bcsk4j"]
 
 [node name="Path2D" type="Path2D"]
 position = Vector2(1140.1, 550.313)
 scale = Vector2(0.789585, 0.777918)
-curve = SubResource("Curve2D_2e401")
-
-[node name="PathFollow2D" type="PathFollow2D" parent="."]
-position = Vector2(-1354, -647)
-rotation = 1.49402
-
-[node name="Solider A" parent="PathFollow2D" instance=ExtResource("1_ncrvx")]
-position = Vector2(-212.457, 320.697)
-rotation = -1.53548
