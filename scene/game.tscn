@@ -1,9 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://d2bta6x6o7iqd"]
+[gd_scene load_steps=5 format=3 uid="uid://d2bta6x6o7iqd"]
 
 [ext_resource type="Texture2D" uid="uid://dcijhmx3fp24f" path="res://assets/Tower Defense (top-down)/Tilesheet/towerDefense_tilesheet.png" id="1_riku4"]
 [ext_resource type="Script" path="res://scene/path_spawner.gd" id="2_lbkj1"]
-[ext_resource type="PackedScene" uid="uid://m42bu0bcsk4j" path="res://scene/Stage 1.tscn" id="3_e2hgl"]
-[ext_resource type="PackedScene" uid="uid://by786jo43xjdf" path="res://Mobs/Solider A.tscn" id="4_hhvd0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3bg5d"]
 texture = ExtResource("1_riku4")
@@ -4369,12 +4367,6 @@ texture_region_size = Vector2i(64, 64)
 tile_size = Vector2i(64, 64)
 sources/0 = SubResource("TileSetAtlasSource_3bg5d")
 
-[sub_resource type="Curve2D" id="Curve2D_hdoga"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, -1404.83, -759.72, 0, 0, 0, 0, -1112.54, -759.72, 0, 0, 0, 0, -1100.98, -376.646, 0, 0, 0, 0, -307.271, -386.93, 0, 0, 0, 0, -284.164, -700.588, 0, 0, 0, 0, -5.72937, -704.444, 0, 0, 0, 0, 4.6687, 188.966, 0, 0, 0, 0, 1418.79, 196.679)
-}
-point_count = 8
-
 [node name="Main" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -4392,18 +4384,5 @@ script = ExtResource("2_lbkj1")
 
 [node name="Timer" type="Timer" parent="PathSpawner"]
 autostart = true
-
-[node name="Path2D" parent="PathSpawner" instance=ExtResource("3_e2hgl")]
-position = Vector2(-113.041, 0)
-scale = Vector2(0.865553, 0.777918)
-curve = SubResource("Curve2D_hdoga")
-
-[node name="PathFollow2D2" type="PathFollow2D" parent="PathSpawner/Path2D"]
-position = Vector2(1418.79, 196.679)
-rotation = 0.00545413
-progress = 4369.91
-
-[node name="Solider A" parent="PathSpawner/Path2D/PathFollow2D2" instance=ExtResource("4_hhvd0")]
-position = Vector2(6.59903, -3.12695)
 
 [connection signal="timeout" from="PathSpawner/Timer" to="PathSpawner" method="_on_timer_timeout"]

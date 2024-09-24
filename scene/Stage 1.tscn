@@ -1,5 +1,0 @@
-[gd_scene format=3 uid="uid://m42bu0bcsk4j"]
-
-[node name="Path2D" type="Path2D"]
-position = Vector2(1140.1, 550.313)
-scale = Vector2(0.789585, 0.777918)
