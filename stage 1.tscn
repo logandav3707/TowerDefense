@@ -4,7 +4,7 @@
 
 [sub_resource type="Curve2D" id="Curve2D_tppgi"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 1, 5, 0, 0, 0, 0, 246, 59, 0, 0, 0, 0, 297, 335, 0, 0, 0, 0, 973, 322, 0, 0, 0, 0, 1002, 84, 0, 0, 0, 0, 1218, 97, 0, 0, 0, 0, 1216, 775, 0, 0, 0, 0, 2366, 777)
+"points": PackedVector2Array(0, 0, 0, 0, 13, 37, 0, 0, 0, 0, 283, 39, 0, 0, 0, 0, 292, 302, 0, 0, 0, 0, 966, 305, 0, 0, 0, 0, 961, 54, 0, 0, 0, 0, 1226, 56, 0, 0, 0, 0, 1231, 744, 0, 0, 0, 0, 2347, 731)
 }
 point_count = 8
 
@@ -13,11 +13,11 @@ position = Vector2(-1350, -600)
 curve = SubResource("Curve2D_tppgi")
 
 [node name="PathFollow2D2" type="PathFollow2D" parent="."]
-position = Vector2(1, 5)
-rotation = 0.21694
+position = Vector2(13, 37)
+rotation = 0.00740727
 scale = Vector2(0.865551, 0.777921)
 skew = 0.00116658
 loop = false
 
 [node name="Solider A" parent="PathFollow2D2" instance=ExtResource("1_hx1rb")]
-position = Vector2(-21.3514, -17.2005)
+position = Vector2(-4.62116, 0.0442929)
