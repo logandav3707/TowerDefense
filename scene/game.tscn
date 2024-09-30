@@ -4386,7 +4386,7 @@ autostart = true
 
 [node name="Towers" type="Node2D" parent="."]
 
-[node name="RedBulletTower" parent="." instance=ExtResource("3_dvqef")]
-position = Vector2(449, 208)
+[node name="RedBulletTower" parent="Towers" instance=ExtResource("3_dvqef")]
+position = Vector2(716, 249)
 
 [connection signal="timeout" from="PathSpawner/Timer" to="PathSpawner" method="_on_timer_timeout"]

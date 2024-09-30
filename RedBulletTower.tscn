@@ -12,7 +12,7 @@ radius = 569.032
 [node name="RedBulletTower" type="StaticBody2D"]
 script = ExtResource("1_h88kq")
 
-[node name="Area" type="Marker2D" parent="."]
+[node name="Aim" type="Marker2D" parent="."]
 position = Vector2(57, -1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -26,13 +26,13 @@ scale = Vector2(2, 2)
 texture = ExtResource("2_n6sx1")
 
 [node name="Tower" type="Area2D" parent="."]
-position = Vector2(-100, -60)
+position = Vector2(1, 1)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Tower"]
-position = Vector2(101, 58)
+position = Vector2(-9, -1)
 shape = SubResource("CircleShape2D_3pw51")
 
-[node name="Node" type="Node" parent="."]
+[node name="BulletContainer" type="Node" parent="."]
 
 [connection signal="body_entered" from="Tower" to="." method="_on_tower_body_entered"]
 [connection signal="body_exited" from="Tower" to="." method="_on_tower_body_exited"]
