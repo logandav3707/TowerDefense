@@ -1,10 +1,18 @@
 extends StaticBody2D
 
+
 var Bullet = preload("res://RedBullet.tscn")
 var bulletDamage = 5
 var pathName
 var currTargets = []
-var curr
+var curr 
+
+func _process(_delta: float) -> void:
+	if is_instance_valid(curr):
+		self.look_at(curr.global_position)
+	else:
+		for i in get_node("BulletContainer").get_child_count():
+			get_node("BulletContainer").get_child(i).queue_free()
 
 
 func _on_tower_body_entered(body:Node2D) -> void:
@@ -36,4 +44,4 @@ func _on_tower_body_entered(body:Node2D) -> void:
 
 
 func _on_tower_body_exited(_body:Node2D) -> void:
-	pass
+	currTargets = get_node("Tower").get_overlapping_bodies()

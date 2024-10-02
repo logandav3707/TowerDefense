@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cjbnvutfsc0qt"]
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = -1
+anchor_left = 0.779
+anchor_top = 0.002
+anchor_right = 0.779
+anchor_bottom = 0.002
+offset_left = 140.837
+offset_top = 0.44
+offset_right = 552.837
+offset_bottom = 1279.44
+
+[node name="FlowContainer" type="FlowContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 152.0
+offset_bottom = 449.0
+scale = Vector2(3, 3)

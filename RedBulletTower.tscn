@@ -7,7 +7,7 @@
 size = Vector2(114, 86)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3pw51"]
-radius = 569.032
+radius = 480.0
 
 [node name="RedBulletTower" type="StaticBody2D"]
 script = ExtResource("1_h88kq")
