@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://cjbnvutfsc0qt"]
+[gd_scene load_steps=2 format=3 uid="uid://cjbnvutfsc0qt"]
+
+[ext_resource type="PackedScene" uid="uid://dsxfwsrsh1bmq" path="res://red_tower_panel.tscn" id="1_hjql3"]
 
 [node name="UI" type="CanvasLayer"]
 
@@ -15,8 +17,56 @@ offset_bottom = 1279.44
 
 [node name="FlowContainer" type="FlowContainer" parent="Panel"]
 layout_mode = 0
-offset_left = 64.0
-offset_top = 64.0
-offset_right = 152.0
-offset_bottom = 449.0
+offset_left = 22.0
+offset_top = 20.0
+offset_right = 156.0
+offset_bottom = 392.0
 scale = Vector2(3, 3)
+
+[node name="RedTowerPanel" parent="Panel/FlowContainer" instance=ExtResource("1_hjql3")]
+layout_mode = 2
+
+[node name="RedTowerPanel3" parent="Panel/FlowContainer" instance=ExtResource("1_hjql3")]
+layout_mode = 2
+
+[node name="RedTowerPanel4" parent="Panel/FlowContainer" instance=ExtResource("1_hjql3")]
+layout_mode = 2
+
+[node name="RedTowerPanel5" parent="Panel/FlowContainer" instance=ExtResource("1_hjql3")]
+layout_mode = 2
+
+[node name="RedTowerPanel6" parent="Panel/FlowContainer" instance=ExtResource("1_hjql3")]
+layout_mode = 2
+
+[node name="RedTowerPanel7" parent="Panel/FlowContainer" instance=ExtResource("1_hjql3")]
+layout_mode = 2
+
+[node name="RedTowerPanel8" parent="Panel/FlowContainer" instance=ExtResource("1_hjql3")]
+layout_mode = 2
+
+[node name="RedTowerPanel9" parent="Panel/FlowContainer" instance=ExtResource("1_hjql3")]
+layout_mode = 2
+
+[node name="RedTowerPanel10" parent="Panel/FlowContainer" instance=ExtResource("1_hjql3")]
+layout_mode = 2
+
+[node name="RedTowerPanel11" parent="Panel/FlowContainer" instance=ExtResource("1_hjql3")]
+layout_mode = 2
+
+[node name="RedTowerPanel12" parent="Panel/FlowContainer" instance=ExtResource("1_hjql3")]
+layout_mode = 2
+
+[node name="RedTowerPanel13" parent="Panel/FlowContainer" instance=ExtResource("1_hjql3")]
+layout_mode = 2
+
+[node name="RedTowerPanel14" parent="Panel/FlowContainer" instance=ExtResource("1_hjql3")]
+layout_mode = 2
+
+[node name="RedTowerPanel15" parent="Panel/FlowContainer" instance=ExtResource("1_hjql3")]
+layout_mode = 2
+
+[node name="RedTowerPanel16" parent="Panel/FlowContainer" instance=ExtResource("1_hjql3")]
+layout_mode = 2
+
+[node name="RedTowerPanel2" parent="Panel/FlowContainer" instance=ExtResource("1_hjql3")]
+layout_mode = 2

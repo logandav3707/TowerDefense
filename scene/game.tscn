@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://d2bta6x6o7iqd"]
+[gd_scene load_steps=6 format=3 uid="uid://d2bta6x6o7iqd"]
 
 [ext_resource type="Texture2D" uid="uid://dcijhmx3fp24f" path="res://assets/Tower Defense (top-down)/Tilesheet/towerDefense_tilesheet.png" id="1_riku4"]
 [ext_resource type="Script" path="res://scene/path_spawner.gd" id="2_lbkj1"]
-[ext_resource type="PackedScene" uid="uid://clouskcavnmxa" path="res://RedBulletTower.tscn" id="3_dvqef"]
 [ext_resource type="PackedScene" uid="uid://cjbnvutfsc0qt" path="res://ui.tscn" id="4_mpg6n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3bg5d"]
@@ -4386,9 +4385,6 @@ script = ExtResource("2_lbkj1")
 autostart = true
 
 [node name="Towers" type="Node2D" parent="."]
-
-[node name="RedBulletTower" parent="Towers" instance=ExtResource("3_dvqef")]
-position = Vector2(1122, 239)
 
 [node name="UI" parent="." instance=ExtResource("4_mpg6n")]
 
